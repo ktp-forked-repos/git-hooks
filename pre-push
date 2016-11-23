@@ -3,7 +3,7 @@ RED='\033[0;31m'
 GO='\033[0;35m'
 NC='\033[0m'
 echo "${GO}Running tests..${NC}"
-if npm run pre-push-test 1>/tmp/mocha_test.log 2>/dev/null
+if npm test 1>/tmp/mocha_test.log 2>/dev/null
 then
 	exit 0
 else
